@@ -1,5 +1,7 @@
 package com.codereview.model;
 
+import java.util.List;
+
 public class FileAnalysisResult {
     private String fileName;
     private AnalysisResponse analysis;
