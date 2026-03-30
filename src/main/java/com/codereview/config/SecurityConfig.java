@@ -1,9 +1,9 @@
 // SecurityConfig.java
-package com.codeanalyzer.config;
+package com.codereview.config;
 
-import com.codeanalyzer.security.CustomUserDetailsService;
-import com.codeanalyzer.security.JwtAuthenticationEntryPoint;
-import com.codeanalyzer.security.JwtAuthenticationFilter;
+import com.codereview.security.CustomUserDetailsService;
+import com.codereview.security.JwtAuthenticationEntryPoint;
+import com.codereview.security.JwtAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
