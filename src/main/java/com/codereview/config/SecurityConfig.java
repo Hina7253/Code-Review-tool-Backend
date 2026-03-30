@@ -2,7 +2,6 @@
 package com.codereview.config;
 
 import com.codereview.security.CustomUserDetailsService;
-import com.codereview.security.JwtAuthenticationEntryPoint;
 import com.codereview.security.JwtAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
