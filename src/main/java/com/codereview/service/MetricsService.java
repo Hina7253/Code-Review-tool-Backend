@@ -1,7 +1,7 @@
 // MetricsService.java
-package com.codeanalyzer.service;
+package com.codereview.service;
 
-import com.codeanalyzer.dto.MetricsResponse;
+import com.codereview.dto.MetricsResponse;
 import org.springframework.stereotype.Service;
 import java.util.regex.Pattern;
 

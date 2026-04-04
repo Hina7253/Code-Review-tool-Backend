@@ -1,7 +1,7 @@
 // CodeAnalysisService.java
-package com.codeanalyzer.service;
+package com.codereview.service;
 
-import com.codeanalyzer.dto.AnalysisResponse;
+import com.codereview.dto.AnalysisResponse;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;

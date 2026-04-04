@@ -1,11 +1,11 @@
 // CodeAnalysisController.java
-package com.codeanalyzer.controller;
+package com.codereview.controller;
 
-import com.codeanalyzer.dto.AnalysisResponse;
-import com.codeanalyzer.dto.CodeRequest;
-import com.codeanalyzer.dto.MetricsResponse;
-import com.codeanalyzer.service.CodeAnalysisService;
-import com.codeanalyzer.service.MetricsService;
+import com.codereview.dto.AnalysisResponse;
+import com.codereview.dto.CodeRequest;
+import com.codereview.dto.MetricsResponse;
+import com.codereview.service.CodeAnalysisService;
+import com.codereview.service.MetricsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
