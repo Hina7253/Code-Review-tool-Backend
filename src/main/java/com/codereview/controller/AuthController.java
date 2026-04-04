@@ -1,4 +1,3 @@
-// AuthController.java
 package com.codereview.controller;
 
 import com.codereview.dto.AuthResponse;
@@ -15,7 +14,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
 public class AuthController {
 
     @Autowired

@@ -1,4 +1,3 @@
-// CodeAnalysisController.java
 package com.codereview.controller;
 
 import com.codereview.dto.AnalysisResponse;
@@ -13,7 +12,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
 public class CodeAnalysisController {
 
     @Autowired

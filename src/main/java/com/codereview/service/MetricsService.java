@@ -1,15 +1,17 @@
-// MetricsService.java
 package com.codereview.service;
 
 import com.codereview.dto.MetricsResponse;
 import org.springframework.stereotype.Service;
-import java.util.regex.Pattern;
 
 @Service
 public class MetricsService {
 
     public MetricsResponse calculateMetrics(String code) {
         MetricsResponse metrics = new MetricsResponse();
+
+        if (code == null || code.trim().isEmpty()) {
+            return metrics;
+        }
 
         String[] lines = code.split("\n");
         int totalLines = lines.length;
@@ -32,13 +34,14 @@ public class MetricsService {
                 continue;
             }
 
-            // Count comments
+            // Count single line comments
             if (trimmedLine.startsWith("//")) {
                 commentLines++;
                 continue;
             }
 
-            if (trimmedLine.contains("/*")) {
+            // Count multi-line comments
+            if (trimmedLine.contains("/*") && !inMultiLineComment) {
                 inMultiLineComment = true;
                 commentLines++;
                 continue;
@@ -64,7 +67,8 @@ public class MetricsService {
             if ((trimmedLine.contains("public") || trimmedLine.contains("private") || trimmedLine.contains("protected")) &&
                     (trimmedLine.contains("void") || trimmedLine.contains("String") || trimmedLine.contains("int") ||
                             trimmedLine.contains("boolean") || trimmedLine.contains("List") || trimmedLine.contains("Map")) &&
-                    trimmedLine.contains("(") && trimmedLine.contains(")") && !trimmedLine.contains("//")) {
+                    trimmedLine.contains("(") && trimmedLine.contains(")") &&
+                    !trimmedLine.contains("//") && !trimmedLine.contains("class")) {
                 methodCount++;
 
                 if (trimmedLine.contains("public")) {
@@ -112,7 +116,7 @@ public class MetricsService {
         // Class structure (max 10 points)
         if (metrics.getClassCount() == 0) score -= 10;
 
-        // Code to comment ratio (max 15 points)
+        // Documentation (max 15 points)
         if (metrics.getCommentLines() == 0) score -= 15;
 
         // Penalty for too many blank lines (max 10 points)
