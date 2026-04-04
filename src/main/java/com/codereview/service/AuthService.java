@@ -5,9 +5,9 @@ import com.codereview.dto.AuthResponse;
 import com.codereview.dto.LoginRequest;
 import com.codereview.dto.RegisterRequest;
 import com.codereview.dto.UserDTO;
-import com.codeanalyzer.entity.User;
-import com.codeanalyzer.repository.UserRepository;
-import com.codeanalyzer.security.JwtTokenProvider;
+import com.codereview.entity.User;
+import com.codereview.repository.UserRepository;
+import com.codereview.security.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -32,20 +32,25 @@ public class AuthService {
     private JwtTokenProvider tokenProvider;
 
     public AuthResponse authenticateUser(LoginRequest loginRequest) {
-        Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(
-                        loginRequest.getEmail(),
-                        loginRequest.getPassword()
-                )
-        );
+        try {
+            Authentication authentication = authenticationManager.authenticate(
+                    new UsernamePasswordAuthenticationToken(
+                            loginRequest.getEmail(),
+                            loginRequest.getPassword()
+                    )
+            );
 
-        SecurityContextHolder.getContext().setAuthentication(authentication);
-        String jwt = tokenProvider.generateToken(authentication);
+            SecurityContextHolder.getContext().setAuthentication(authentication);
+            String jwt = tokenProvider.generateToken(authentication);
 
-        User user = userRepository.findByEmail(loginRequest.getEmail()).get();
-        UserDTO userDTO = new UserDTO(user.getId(), user.getUsername(), user.getEmail());
+            User user = userRepository.findByEmail(loginRequest.getEmail())
+                    .orElseThrow(() -> new RuntimeException("User not found"));
+            UserDTO userDTO = new UserDTO(user.getId(), user.getUsername(), user.getEmail());
 
-        return new AuthResponse(jwt, userDTO);
+            return new AuthResponse(jwt, userDTO);
+        } catch (Exception e) {
+            throw new RuntimeException("Authentication failed: " + e.getMessage());
+        }
     }
 
     public AuthResponse registerUser(RegisterRequest registerRequest) {
@@ -64,6 +69,7 @@ public class AuthService {
 
         User savedUser = userRepository.save(user);
 
+        // Authenticate the newly registered user
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         registerRequest.getEmail(),
