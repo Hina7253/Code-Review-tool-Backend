@@ -1,11 +1,11 @@
 // AuthController.java
-package com.codeanalyzer.controller;
+package com.codereview.controller;
 
-import com.codeanalyzer.dto.AuthResponse;
-import com.codeanalyzer.dto.LoginRequest;
-import com.codeanalyzer.dto.RegisterRequest;
-import com.codeanalyzer.dto.UserDTO;
-import com.codeanalyzer.service.AuthService;
+import com.codereview.dto.AuthResponse;
+import com.codereview.dto.LoginRequest;
+import com.codereview.dto.RegisterRequest;
+import com.codereview.dto.UserDTO;
+import com.codereview.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
