@@ -95,7 +95,6 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/java-code-analyzer-pro.git
-cd java-code-analyzer-pro
+git clone https: https://github.com/Hina7253/Code-Review-tool-Backend.git
 
 
