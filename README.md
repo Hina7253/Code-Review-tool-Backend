@@ -80,4 +80,14 @@
 - **React Hot Toast** - Notifications
 - **CSS3** - Styling with animations
 
+  ## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Java JDK 11 or higher** ([Download](https://adoptium.net/))
+- **Node.js 16+** ([Download](https://nodejs.org/))
+- **MySQL 8.0+** ([Download](https://www.mysql.com/downloads/)) or use H2 (embedded)
+- **Maven 3.6+** ([Download](https://maven.apache.org/download.cgi))
+- **Git** ([Download](https://git-scm.com/))
+
 
