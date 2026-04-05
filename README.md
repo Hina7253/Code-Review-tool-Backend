@@ -61,3 +61,23 @@
 │ (User Management) │
 └─────────────────────────────────────────────────────────────┘
 
+## 🛠️ Tech Stack
+
+### Backend
+- **Java 11/17** - Core language
+- **Spring Boot 2.7.14** - Application framework
+- **Spring Security** - Authentication & Authorization
+- **Spring Data JPA** - Database operations
+- **JWT** - Token-based authentication
+- **MySQL/H2** - Database
+- **Maven** - Dependency management
+
+### Frontend
+- **React 18** - UI framework
+- **React Router v6** - Routing
+- **Axios** - HTTP client
+- **jsPDF** - PDF generation
+- **React Hot Toast** - Notifications
+- **CSS3** - Styling with animations
+
+
