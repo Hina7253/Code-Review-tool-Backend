@@ -21,3 +21,17 @@
 - ⚡ **Performance Analysis** - Detect performance bottlenecks
 - 🐛 **Bug Pattern Detection** - Null pointers, resource leaks, concurrency issues
 
+  ## 📋 Table of Contents
+
+- [Architecture](#architecture)
+- [Tech Stack](#tech-stack)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Running the Application](#running-the-application)
+- [API Documentation](#api-documentation)
+- [Usage Guide](#usage-guide)
+- [Sample Code](#sample-code)
+- [Contributing](#contributing)
+- [License](#license)
+
