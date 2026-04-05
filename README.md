@@ -9,3 +9,15 @@
 ## 🚀 Overview
 
 **Java Code Analyzer Pro** is a comprehensive, AI-powered static code analysis tool that helps developers identify potential bugs, security vulnerabilities, and code quality issues in Java applications. The tool features a modern React frontend and a robust Spring Boot backend with JWT authentication.
+
+### ✨ Key Features
+
+- 🔍 **Real-time Code Analysis** - Instant detection of code issues
+- 🛡️ **Security Vulnerability Detection** - SQL injection, hardcoded credentials, and more
+- 📊 **Code Metrics Dashboard** - Lines of code, comment coverage, complexity scores
+- 🔐 **JWT Authentication** - Secure user authentication and authorization
+- 📄 **PDF Report Generation** - Download detailed analysis reports
+- 🎨 **Modern UI** - Beautiful, responsive interface with animations
+- ⚡ **Performance Analysis** - Detect performance bottlenecks
+- 🐛 **Bug Pattern Detection** - Null pointers, resource leaks, concurrency issues
+
