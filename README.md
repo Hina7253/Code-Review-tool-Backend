@@ -90,4 +90,12 @@ Before you begin, ensure you have the following installed:
 - **Maven 3.6+** ([Download](https://maven.apache.org/download.cgi))
 - **Git** ([Download](https://git-scm.com/))
 
+  ## 🔧 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/java-code-analyzer-pro.git
+cd java-code-analyzer-pro
+
 
