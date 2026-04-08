@@ -79,7 +79,6 @@
 - **React Hot Toast** - Notifications
 - **CSS3** - Styling with animations
 
-  ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
 
