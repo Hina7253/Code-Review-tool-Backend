@@ -35,7 +35,7 @@
 - [Contributing](#contributing)
 - [License](#license)
 
- 
+  ## 🏗️ Architecture
 ┌─────────────────────────────────────────────────────────────┐
 │ Client Browser (Port 3000) │
 │ React Frontend App │
