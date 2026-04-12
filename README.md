@@ -20,7 +20,6 @@
 - ⚡ **Performance Analysis** - Detect performance bottlenecks
 - 🐛 **Bug Pattern Detection** - Null pointers, resource leaks, concurrency issues
 
-  ## 📋 Table of Contents
 
 - [Architecture](#architecture)
 - [Tech Stack](#tech-stack)
