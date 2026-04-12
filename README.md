@@ -80,7 +80,7 @@
 - **CSS3** - Styling with animations
 
 
- ## 📋 Prerequisites
+
 Before you begin, ensure you have the following installed:
 
 - **Java JDK 11 or higher** ([Download](https://adoptium.net/))
