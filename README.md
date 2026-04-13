@@ -60,7 +60,6 @@
 │ (User Management) │
 └─────────────────────────────────────────────────────────────┘
 
-## 🛠️ Tech Stack
 
 ### Backend
 - **Java 11/17** - Core language
