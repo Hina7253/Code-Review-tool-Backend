@@ -1,4 +1,4 @@
-
+# ☕ Java Code Analyzer Pro
 
 [![Java](https://img.shields.io/badge/Java-11%2B-blue.svg)](https://www.java.com/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7.14-brightgreen.svg)](https://spring.io/projects/spring-boot)
