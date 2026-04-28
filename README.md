@@ -7,7 +7,7 @@
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-orange.svg)](https://www.mysql.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-
+## 🚀 Overview
 **Java Code Analyzer Pro** is a comprehensive, AI-powered static code analysis tool that helps developers identify potential bugs, security vulnerabilities, and code quality issues in Java applications. The tool features a modern React frontend and a robust Spring Boot backend with JWT authentication.
 
 ### ✨ Key Features
